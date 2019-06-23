@@ -2,5 +2,5 @@
     "access_key": "YOURS_HERE",
     "secret_key": "YOURS_HERE",
     "target_bucket": "YOURS_HERE",
-    "storage_type": "DEEP_ARCHIVE"
+    "storage_type": "STANDARD"
 }
