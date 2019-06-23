@@ -41,12 +41,13 @@ import os, json, boto3
 def upload_files(directory):
     # Load list of already uploaded files
     already_uploaded = list()
-    already_uploaded = open('uploaded_list.txt').read().splitlines()
+    if os.path.exists("uploaded_list.txt"):
+        already_uploaded = open('uploaded_list.txt').read().splitlines()
 
     # Check each file and upload as needed
     for file in os.listdir(directory):
         # Skip creds/python/list/errors files
-        if file == 'config.json' or file == 's3upload.py' or file == 'uploaded_list.txt' or file == 'errors.txt':
+        if file == 'config.json' or file == 's3upload.py' or file == 's3upload.pyw' or file == 'uploaded_list.txt' or file == 'errors.txt':
             continue
 
         # Upload file if not in list
