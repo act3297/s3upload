@@ -1,8 +1,8 @@
-Creator: Robert Bennett
-GitHub: act3297
-Email: opensource-s3upload@robertbennett.info
-Date: 06/21/2019
-Version: 1.0
+# Creator: Robert Bennett
+# GitHub: act3297
+# Email: opensource-s3upload@robertbennett.info
+# Date: 06/21/2019
+# Version: 1.0
 
 This program uploads all the files in a single folder to a bucket in AWS S3. It keeps a list of the files (as a readable txt file) so duplicates are not uploaded.
 
